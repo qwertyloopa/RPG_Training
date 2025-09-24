@@ -5,4 +5,5 @@ move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, obj_enemy_paren
 
 if (hp <= 0) {
 	instance_destroy();
+    obj_player.add_xp(xp_value);
 }
