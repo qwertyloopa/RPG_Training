@@ -23,5 +23,11 @@ function add_xp(_xp_to_add)
         hp_total += 5;
         hp = hp_total;
         damage += 0.8;
+        create_dialogue([
+           {
+            name: "Congrats!",
+            msg: $"У тебя теперь {level} уровень, a также \n {hp} жизни \n {damage} силы"
+           }
+        ])
     }
 }
